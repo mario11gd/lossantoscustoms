@@ -1,0 +1,241 @@
+header {
+    background-color: #092635;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;   
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;    
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+/* He hecho el navegador más interactivo */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    background-color: #092635;
+    z-index:2;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #092635;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #1B4242;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #092635;
+    width: 200%;
+}
+
+nav ul ul li {
+    float: none;
+    width: 100%;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+div {
+    padding: 20px;
+}
+
+form {
+    margin: 0;
+    padding: 20px;
+    background-color: #9EC8B9;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+    font-size: small;
+}
+
+form label {
+    display:block;
+    margin-bottom: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#1B4242;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input, select {
+    width: 90%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+}
+
+button:hover {
+    background-color: #092635;
+}
+
+footer {
+    background-color: #092635;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index:2;
+}
+
+#caja {
+    height: 60%;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 100px;
+    transition: transform 3s;
+}
+
+.deportivo {
+    flex-basis: 30%;
+    z-index: 1;
+}
+/* He añadido scale para que sea más interactiva la página */
+.deportivo:hover {
+    transform: scale(1.1);
+    z-index: 1;   
+}
+
+.deportivo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.deportivo h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.deportivo p {
+    font-size: 16px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(193,1fr);
+}
+
+.clasico {
+    grid-column: span 64;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+
+.clasico:hover {
+    transform: scale(1.1);
+    z-index: 1;   
+}
+
+.clasico img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.clasico h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.clasico p {
+    font-size: 16px;
+}
+
+#logo {
+    width: 40px;
+    height: auto;
+    padding-right: 50px;
+}
+
+div h2 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+    text-align: center;
+}
+
+.video-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+th {
+    background-color: #5C8374; 
+    border: 1px solid #092635; 
+    padding: 8px; 
+    text-align: left; 
+    font-family: 'Franklin Gothic Medium';
+}
+
+td {
+    background-color:#9EC8B9;
+    border: 1px solid #092635; 
+    padding: 8px; 
+    text-align: left; 
+}
+

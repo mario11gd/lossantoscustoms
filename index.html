@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Santos Customs</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!--He añadido un icono a la página-->
+    <link rel="icon" type="image/png" href="Multimedia/logo.png">
+
+</head>
+<body>
+
+    <header>
+        <h1>Los Santos Customs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Coches</a>
+                    <ul>
+                        <li><a href="deportivos.html">Deportivos</a></li>
+                        <li><a href="clasicos.html">Clásicos</a></li>
+                    </ul>
+                </li>
+                <li><a href="precios.html">Precios</a></li>
+            </ul>
+            <!--He añadido un logo que te redirecciona a la página principal-->
+            <a href="index.html">
+                <img id="logo" src="Multimedia/logo.png">
+            </a>
+        </nav>
+    </header>
+
+    <div>
+        <h2>Bienvenido a Los Santos Customs</h2>
+        <div class="intro">
+            <p>¡Bienvenido a Los Santos Customs, tu destino definitivo para los verdaderos entusiastas del automóvil! En nuestro concesionario, no solo ofrecemos una selección incomparable de los mejores coches del mundo, sino que también te invitamos a sumergirte en una experiencia única donde el lujo, el rendimiento y el estilo se fusionan en perfecta armonía. Desde los clásicos más icónicos hasta las últimas maravillas de la ingeniería automotriz, cada vehículo que encontrarás en nuestro showroom representa la culminación de la excelencia en diseño y tecnología. Nuestro equipo apasionado y experto está aquí para brindarte un servicio personalizado y hacer realidad tus sueños automovilísticos. Ya sea que estés buscando el coche de tus sueños o simplemente quieras experimentar la emoción de conducir algo verdaderamente excepcional, estamos comprometidos a superar tus expectativas en cada paso del camino. En Los Santos Customs, no solo vendemos coches, creamos experiencias inolvidables. Descubre el placer de conducir en su máxima expresión con nosotros. ¡Te esperamos para hacer de tu próxima visita una aventura automovilística que nunca olvidarás!</p>
+        </div>
+    </div>
+
+    <div>
+        <!--He metido un video-->
+        <h2>Video de presentación</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="Multimedia\los-santos-customs.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div>
+        <h2>¿Estás interesado en algún coche?</h2>
+        <!--He metido un botón que redirecciona a otro HTML-->
+        <a href="precios.html">
+            <button>Consulta los precios</button>
+        </a>
+        <form>
+            <!--He metido required=True para que sea obligatorio meter los input. También he metido un patrón para el DNI para que tengan que ser 8 dígitos seguidos de una letra-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="" required="true"/>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" value=""required="true" />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value=""required="true" />
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" value="" pattern="[0-9]{8}[A-Za-z]" required="true" placeholder="Introduce un DNI válido (8 dígitos seguidos de una letra)"/>
+            <label for="coche">Modelo:</label>
+            <select id="coche">
+                <option selected>Ferrari 812 Competizione A</option>
+                <option>Lamborghini Sian FKP 37</option>
+                <option>Mercedes-AMG GT Coupé</option>
+                <option>Aston Martin DB5</option>
+                <option>Porsche 912</option>
+                <option>Ferrari F40</option>
+            </select><br>
+            
+            <button type="reset">Limpiar formulario</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Creado por: Mario Gutiérrez</p>
+    </footer>
+</body>
+</html>
